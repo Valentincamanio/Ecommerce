@@ -1,0 +1,43 @@
+//personalizacion de variables
+@import "extra/variables";
+
+.header-global{
+    display: flex;
+    flex-direction: column;
+    .publi-header{
+        background-color: #748CAB;
+        p{
+            color: #F0EBD8;            
+            text-align: center;
+            padding: .3rem;            
+        }
+    }
+    .nav-header{
+        background-color: #1D2D44;
+        nav{
+            #navbarNav{
+                ul{
+                    li{
+                        .color-letras{
+                            color: #F0EBD8
+                        } 
+                        .color-letras a:hover{
+                            color: red
+                        }                           
+                    }
+                }                
+            }
+        }
+    }
+}
+
+
+
+/* personalizacion de index*/
+@import "extra/index";
+
+/* personalizacion de productos */
+@import "extra/productos";
+
+/* personalizacion de ayuda! */
+@import "extra/ayuda";

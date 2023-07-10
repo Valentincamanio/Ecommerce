@@ -1,0 +1,19 @@
+.header-global {
+  display: flex;
+  flex-direction: column; }
+  .header-global .publi-header {
+    background-color: #748CAB; }
+    .header-global .publi-header p {
+      color: #F0EBD8;
+      text-align: center;
+      padding: .3rem; }
+  .header-global .nav-header {
+    background-color: #1D2D44; }
+    .header-global .nav-header nav #navbarNav ul li .color-letras {
+      color: #F0EBD8; }
+    .header-global .nav-header nav #navbarNav ul li .color-letras a:hover {
+      color: red; }
+
+/* personalizacion de index*/
+/* personalizacion de productos */
+/* personalizacion de ayuda! */
