@@ -1,0 +1,100 @@
+// utilidades
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+
+// personalizacion de html home/index
+
+.contenedor-index{
+    background-color: rgb(224, 224, 224);
+    header{
+        @include header;
+    }
+    .main-index{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin-left: 2rem;
+        .imagen-logomain{
+            @include flex;
+            width: 100%;
+            padding: 1rem;
+            img{
+                height: 100%;
+                width: 100%;
+            }
+        }
+        .texto-mainhome{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            p{
+                text-align: center;
+                margin: 1rem;
+            }
+        }
+    }
+    .section-uno{
+        margin: 2rem 0rem 2rem 0rem;
+        padding: .5rem;
+        background-color: $color-principal;
+        h2{
+            margin-left: .6rem;
+            color: whitesmoke;
+        }
+    }
+    .section-dos{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        .articulos-enventa{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+            border: 1px solid black;
+            border-radius: 7px;
+            margin: 0rem 3rem;
+            background-color: #edebe4;
+            .img-productoenventa{
+                width: 50%;
+                padding: 1rem;
+                img{
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 5px;
+                }
+            }
+            .p-productoenventa{
+                color: black;
+            }
+        }
+    }
+    .boton-vermas{
+        @include flex;
+        margin: 2rem;
+        a{
+            background-color: $color-secundario;
+            padding: .3rem;
+            border-radius: 3px;
+            color: black;
+            text-decoration: none;
+        }
+        a:hover{
+            color: white;
+            text-decoration: underline;
+        }
+    }
+    footer{
+        @include footer;
+    }
+
+
+
+
+}

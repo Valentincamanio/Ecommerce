@@ -1,0 +1,64 @@
+// variables
+@import "../utilidades/variables";
+
+
+// mixin sin parametros
+
+@mixin flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin header{
+    display: flex;
+    flex-direction: column;
+    .publi-header{
+        background-color: #748CAB;
+        p{
+            color: whitesmoke;            
+            text-align: center;
+            padding: .5rem;
+            font-size: .8rem;           
+        }
+    }
+    .nav-header{
+        background-color: #1D2D44;
+        nav{
+            #navbarNav{
+                ul{
+                    li{
+                        .color-letras{
+                            color: #F0EBD8;
+                        } 
+                        .color-letras a:hover{
+                            color: red
+                        }                           
+                    }
+                }                
+            }
+        }
+    }
+}
+
+@mixin footer{
+    background-color: $color-principal;
+    @include flex;
+    flex-direction: column;
+    color: whitesmoke;
+    padding: 1rem;
+    margin-top: 5rem;
+    .redes-footer{
+        @include flex;
+        gap: 2rem;
+        a{
+            color: white;
+            transition: .5s;
+        }
+        a:hover{
+            border: 1px solid white;
+            padding: .3rem;
+            transition: .5s;
+        }
+    }
+}

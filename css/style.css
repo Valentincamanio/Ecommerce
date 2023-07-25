@@ -1,19 +1,112 @@
-.header-global {
-  display: flex;
-  flex-direction: column; }
-  .header-global .publi-header {
-    background-color: #748CAB; }
-    .header-global .publi-header p {
-      color: #F0EBD8;
-      text-align: center;
-      padding: .3rem; }
-  .header-global .nav-header {
-    background-color: #1D2D44; }
-    .header-global .nav-header nav #navbarNav ul li .color-letras {
-      color: #F0EBD8; }
-    .header-global .nav-header nav #navbarNav ul li .color-letras a:hover {
-      color: red; }
-
 /* personalizacion de index*/
+.contenedor-index {
+  background-color: #e0e0e0; }
+  .contenedor-index header {
+    display: flex;
+    flex-direction: column; }
+    .contenedor-index header .publi-header {
+      background-color: #748CAB; }
+      .contenedor-index header .publi-header p {
+        color: whitesmoke;
+        text-align: center;
+        padding: .5rem;
+        font-size: .8rem; }
+    .contenedor-index header .nav-header {
+      background-color: #1D2D44; }
+      .contenedor-index header .nav-header nav #navbarNav ul li .color-letras {
+        color: #F0EBD8; }
+      .contenedor-index header .nav-header nav #navbarNav ul li .color-letras a:hover {
+        color: red; }
+  .contenedor-index .main-index {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 2rem; }
+    .contenedor-index .main-index .imagen-logomain {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding: 1rem; }
+      .contenedor-index .main-index .imagen-logomain img {
+        height: 100%;
+        width: 100%; }
+    .contenedor-index .main-index .texto-mainhome {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem; }
+      .contenedor-index .main-index .texto-mainhome p {
+        text-align: center;
+        margin: 1rem; }
+  .contenedor-index .section-uno {
+    margin: 2rem 0rem 2rem 0rem;
+    padding: .5rem;
+    background-color: #1D2D44; }
+    .contenedor-index .section-uno h2 {
+      margin-left: .6rem;
+      color: whitesmoke; }
+  .contenedor-index .section-dos {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; }
+    .contenedor-index .section-dos .articulos-enventa {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+      border: 1px solid black;
+      border-radius: 7px;
+      margin: 0rem 3rem;
+      background-color: #edebe4; }
+      .contenedor-index .section-dos .articulos-enventa .img-productoenventa {
+        width: 50%;
+        padding: 1rem; }
+        .contenedor-index .section-dos .articulos-enventa .img-productoenventa img {
+          height: 100%;
+          width: 100%;
+          border-radius: 5px; }
+      .contenedor-index .section-dos .articulos-enventa .p-productoenventa {
+        color: black; }
+  .contenedor-index .boton-vermas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem; }
+    .contenedor-index .boton-vermas a {
+      background-color: #748CAB;
+      padding: .3rem;
+      border-radius: 3px;
+      color: black;
+      text-decoration: none; }
+    .contenedor-index .boton-vermas a:hover {
+      color: white;
+      text-decoration: underline; }
+  .contenedor-index footer {
+    background-color: #1D2D44;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: whitesmoke;
+    padding: 1rem;
+    margin-top: 5rem; }
+    .contenedor-index footer .redes-footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem; }
+      .contenedor-index footer .redes-footer a {
+        color: white;
+        transition: .5s; }
+      .contenedor-index footer .redes-footer a:hover {
+        border: 1px solid white;
+        padding: .3rem;
+        transition: .5s; }
+
 /* personalizacion de productos */
 /* personalizacion de ayuda! */
