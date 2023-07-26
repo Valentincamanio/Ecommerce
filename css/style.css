@@ -23,20 +23,19 @@
         color: red; }
   .contenedor-index .main-index {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
-    margin-left: 2rem; }
+    gap: 1rem; }
     .contenedor-index .main-index .imagen-logomain {
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 130%;
-      margin-left: 2rem; }
+      width: 50%;
+      margin-top: 2rem; }
       .contenedor-index .main-index .imagen-logomain img {
-        height: 200%;
-        width: 200%;
+        height: 100%;
+        width: 100%;
         border: 1px solid black;
         border-radius: 100%; }
     .contenedor-index .main-index .texto-mainhome {
