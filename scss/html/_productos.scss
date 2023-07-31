@@ -1,0 +1,23 @@
+// utilidades
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+
+// personalizacion de html productos
+.contenedor-productos{
+    header{
+        @include header;
+    }
+
+
+
+
+
+
+
+    footer{
+        @include footer;
+    }
+
+
+}

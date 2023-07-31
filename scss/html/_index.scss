@@ -47,6 +47,7 @@
     }
     .section-uno{
         @extend %titulos;
+        margin-bottom: 2rem;
     }
     .section-dos{
         display: flex;
@@ -92,10 +93,13 @@
     }
     .section-tres{
         @extend %titulos;
-        
     }
     .section-cuatro{
-        
+        background-color: rgb(224, 224, 224);
+        .txt-nosotros{
+            text-align: center;
+            padding: 1.5rem;
+        }
     }
     footer{
         @include footer;
@@ -185,5 +189,89 @@
                 }
             } 
         }
+        .section-cuatro{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas: "txt-nosotros img-nosotros";
+            .txt-nosotros{
+                grid-area: txt-nosotros;
+            }
+            .img-nosotros{
+                grid-area: img-nosotros;
+                width: 100%;
+                padding: 1rem 1rem 1rem 0rem;
+                img{
+                    height: 100%;
+                    width: 100%;
+                    overflow-y: cover;
+                }
+            }
+        }
+
     }
+}
+
+/* MQ para desktop */
+
+@media screen and (min-width:1024px){
+    .contenedor-index{
+        .main-index{
+            .imagen-logomain{
+                width: 60%;
+                img{
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+        .section-dos{
+            .articulos-enventa{
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                .tittle-productoenventa{
+                    color: black;
+                }
+                .img-productoenventa{
+                    width: 50%;
+                    height: 50%;
+                    img{
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+                .p-productoenventa{
+                    text-align: center;
+                    color: black;
+                    grid-area: p-productoenventa;
+                    padding: 0rem;
+                    font-size: 1.2rem;
+
+                }
+            } 
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
 }
