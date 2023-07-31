@@ -46,13 +46,7 @@
         }
     }
     .section-uno{
-        margin-bottom: 2rem;
-        padding: .5rem;
-        background-color: $color-principal;
-        h2{
-            margin-left: .6rem;
-            color: whitesmoke;
-        }
+        @extend %titulos;
     }
     .section-dos{
         display: flex;
@@ -95,6 +89,13 @@
             color: white;
             text-decoration: underline;
         }
+    }
+    .section-tres{
+        @extend %titulos;
+        
+    }
+    .section-cuatro{
+        
     }
     footer{
         @include footer;

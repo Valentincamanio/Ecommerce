@@ -1,4 +1,12 @@
 /* personalizacion de index*/
+.contenedor-index .section-uno, .contenedor-index .section-tres {
+  margin-bottom: 2rem;
+  padding: .5rem;
+  background-color: #1D2D44; }
+  .contenedor-index .section-uno h2, .contenedor-index .section-tres h2 {
+    margin-left: .6rem;
+    color: whitesmoke; }
+
 .contenedor-index {
   background-color: #a19f9f; }
   .contenedor-index header {
@@ -55,13 +63,6 @@
         border-radius: 1rem;
         padding: 1rem;
         color: whitesmoke; }
-  .contenedor-index .section-uno {
-    margin-bottom: 2rem;
-    padding: .5rem;
-    background-color: #1D2D44; }
-    .contenedor-index .section-uno h2 {
-      margin-left: .6rem;
-      color: whitesmoke; }
   .contenedor-index .section-dos {
     display: flex;
     flex-direction: column;

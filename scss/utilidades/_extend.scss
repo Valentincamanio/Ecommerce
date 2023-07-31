@@ -8,3 +8,13 @@
     padding: 2rem;
     background-color: tomato;
 }
+
+%titulos{
+    margin-bottom: 2rem;
+    padding: .5rem;
+    background-color: $color-principal;
+    h2{
+        margin-left: .6rem;
+        color: whitesmoke;
+    }
+}
