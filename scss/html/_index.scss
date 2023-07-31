@@ -59,15 +59,14 @@
         flex-direction: column;
         gap: 2rem;
         .articulos-enventa{
-            display: flex;
+            @include flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
             padding: 1rem;
             border: 1px solid black;
             border-radius: 7px;
             margin: 0rem 3rem;
             background-color: #edebe4;
+            gap: 1rem;
             .img-productoenventa{
                 width: 70%;
                 img{
@@ -78,6 +77,7 @@
             }
             .p-productoenventa{
                 color: black;
+                text-align: center;
             }
         }
     }
@@ -151,15 +151,24 @@
             flex-direction: column;
             flex-wrap: nowrap;
             .articulos-enventa{
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 2fr;
+                grid-template-areas: "img-productoenventa tittle-productoenventa""img-productoenventa p-productoenventa";
                 border: 1px solid black;
                 border-radius: 7px;
                 background-color: #edebe4;
+                gap: 0rem;
+                .tittle-productoenventa{
+                    color: black;
+                    grid-area: tittle-productoenventa;
+                    text-align: center;
+                }
                 .img-productoenventa{
-                    width: 30%;
+                    width: 100%;
+                    height: 100%;
+                    grid-area: img-productoenventa;
+                    @include flex;
                     img{
                         height: 100%;
                         width: 100%;
@@ -167,8 +176,11 @@
                     }
                 }
                 .p-productoenventa{
-                    margin: 2rem;
+                    text-align: center;
                     color: black;
+                    grid-area: p-productoenventa;
+                    padding: 0rem 1rem;
+                    font-size: .9rem;
                 }
             } 
         }

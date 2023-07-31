@@ -68,14 +68,15 @@
     gap: 2rem; }
     .contenedor-index .section-dos .articulos-enventa {
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
+      flex-direction: column;
       padding: 1rem;
       border: 1px solid black;
       border-radius: 7px;
       margin: 0rem 3rem;
-      background-color: #edebe4; }
+      background-color: #edebe4;
+      gap: 1rem; }
       .contenedor-index .section-dos .articulos-enventa .img-productoenventa {
         width: 70%; }
         .contenedor-index .section-dos .articulos-enventa .img-productoenventa img {
@@ -83,7 +84,8 @@
           width: 100%;
           border-radius: 5px; }
       .contenedor-index .section-dos .articulos-enventa .p-productoenventa {
-        color: black; }
+        color: black;
+        text-align: center; }
   .contenedor-index .boton-vermas {
     display: flex;
     justify-content: center;
@@ -161,22 +163,35 @@
     flex-direction: column;
     flex-wrap: nowrap; }
     .contenedor-index .section-dos .articulos-enventa {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 2fr;
+      grid-template-areas: "img-productoenventa tittle-productoenventa" "img-productoenventa p-productoenventa";
       border: 1px solid black;
       border-radius: 7px;
-      background-color: #edebe4; }
+      background-color: #edebe4;
+      gap: 0rem; }
+      .contenedor-index .section-dos .articulos-enventa .tittle-productoenventa {
+        color: black;
+        grid-area: tittle-productoenventa;
+        text-align: center; }
       .contenedor-index .section-dos .articulos-enventa .img-productoenventa {
-        width: 30%; }
+        width: 100%;
+        height: 100%;
+        grid-area: img-productoenventa;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
         .contenedor-index .section-dos .articulos-enventa .img-productoenventa img {
           height: 100%;
           width: 100%;
           border-radius: 5px; }
       .contenedor-index .section-dos .articulos-enventa .p-productoenventa {
-        margin: 2rem;
-        color: black; } }
+        text-align: center;
+        color: black;
+        grid-area: p-productoenventa;
+        padding: 0rem 1rem;
+        font-size: .9rem; } }
 
 /* personalizacion de productos */
 /* personalizacion de ayuda! */
