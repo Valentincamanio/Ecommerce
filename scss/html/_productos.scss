@@ -8,7 +8,30 @@
     header{
         @include header;
     }
+    .carrousel-prod{
+        margin: 2rem 0rem;
+    }
+    main{
+        .cont-prod{
+            background-color: rgb(211, 211, 208);
 
+            gap: .5rem;
+            flex-direction: column;
+            margin-top: 1rem;
+            ul{
+                list-style: none;
+                .cards-product{
+                    display: flex;
+                    justify-content: end;
+                    margin: 1rem
+                }
+                .boton-vermas{
+                    @include ver-mas;
+                    border-radius: 20%;
+                }
+            }
+        }
+    }
 
 
 
